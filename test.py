@@ -1,7 +1,7 @@
 import sys
 
 def test(did_pass):
-    linenum = sys.getframe(1).f_lineno
+    linenum = sys._getframe(1).f_lineno
     if did_pass:
         msg = "Test at line {0} ok.".format(linenum)
     else:
